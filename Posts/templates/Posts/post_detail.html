@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block 'content' %}
+
+<div class="card m-2">
+    <div class="card-body">
+
+    
+
+    
+    <h3 class="card-title mb-3 text-center">{{ object.Title }}</h3> 
+
+    <span class="badge text-bg-light mb-4">{{object.topics}}</span>
+    <h6 class="card-subtitle mb-2 text-muted">{{object.date_published}}</h6>
+    <p class="text-center">{{ object.Content|safe}}</p>
+    </div>
+
+</div>
+
+{% endblock %}
