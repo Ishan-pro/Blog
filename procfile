@@ -1,0 +1,1 @@
+web: gunicorn IshanBlog.wsgi:application --log-file -
